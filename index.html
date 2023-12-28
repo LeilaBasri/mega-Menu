@@ -11,13 +11,13 @@ body {
   margin: 0;
 }
 
-.navbar {
+.header-Top-Left {
   overflow: hidden;
   background-color: #333;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.navbar a {
+.header-Top-Left a {
   float: left;
   font-size: 16px;
   color: white;
@@ -26,12 +26,12 @@ body {
   text-decoration: none;
 }
 
-.dropdown {
+.header-Top-Left-SubMenuNavLink {
   float: left;
   overflow: hidden;
 }
 
-.dropdown .dropbtn {
+.header-Top-Left-SubMenuNavLink .header-Top-Left-Item {
   font-size: 16px;  
   border: none;
   outline: none;
@@ -42,11 +42,11 @@ body {
   margin: 0;
 }
 
-.navbar a:hover, .dropdown:hover .dropbtn {
+.header-Top-Left a:hover, .header-Top-Left-SubMenuNavLink:hover .header-Top-Left-Item {
   background-color: red;
 }
 
-.dropdown-content {
+.dropdown-Content-SubMenuNav {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -56,13 +56,13 @@ body {
   z-index: 1;
 }
 
-.dropdown-content .header {
+.dropdown-Content-SubMenuNav .header {
   background: red;
   padding: 16px;
   color: white;
 }
 
-.dropdown:hover .dropdown-content {
+.header-Top-Left:hover .dropdown-Content-SubMenuNav {
   display: block;
 }
 
@@ -108,12 +108,11 @@ body {
 
 <div class="header-Top-Left">
   <a href="#home">Home</a>
-  <a href="#news">About Us</a>
-  <div class="header-Top-Left-SubMenuNav">
-    <button class="dropbtn">Dropdown 
+  <div class="header-Top-Left-SubMenuNavLink">
+    <a class="header-Top-Left-Item">About Us 
       <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
+    </a>
+    <div class="dropdown-Content-SubMenuNav">
       <div class="header">
         <h2>Get in touch with us</h2>
       </div>   
