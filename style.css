@@ -36,7 +36,6 @@ body {
   background-color: inherit;
   font: inherit;
   margin: 0;
-  position: relative;
 }
 
 .navbar a:hover, .dropdown:hover .dropbtn {
