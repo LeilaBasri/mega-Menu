@@ -67,7 +67,7 @@ body {
   width: 100%;
   padding: 10px;
   background-color: #ccc;
-  height: 250px;
+  height: auto;
 }
 
 .column a {
